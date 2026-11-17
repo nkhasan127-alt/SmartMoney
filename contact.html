@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact - SmartMoney</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <a href="index.html" class="logo">Smart<span>Money</span></a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Buka Menu">☰</button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+        <li><button id="themeToggle" class="btn-theme">🌙 Dark Mode</button></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section class="page-header">
+      <h1>Hubungi Kami</h1>
+      <p>Punya pertanyaan seputar pengelolaan keuangan atau kendala website? Kirimkan pesanmu di sini.</p>
+    </section>
+
+    <section class="form-wrapper">
+      <form id="contactForm" class="contact-form" novalidate>
+        <div class="form-group">
+          <label for="nama">Nama Lengkap</label>
+          <input type="text" id="nama" placeholder="Masukkan nama Anda...">
+        </div>
+
+        <div class="form-group">
+          <label for="email">Alamat Email</label>
+          <input type="email" id="email" placeholder="nama@email.com">
+        </div>
+
+        <div class="form-group">
+          <label for="pesan">Pesan / Masukan</label>
+          <textarea id="pesan" rows="4" placeholder="Tuliskan pesanmu..."></textarea>
+        </div>
+
+        <button type="submit" class="btn-primary full-width">Kirim Pesan</button>
+      </form>
+
+      <div id="pesanTersimpan" class="saved-message" style="display: none;"></div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 SmartMoney Team - Kelas XII RPL. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
