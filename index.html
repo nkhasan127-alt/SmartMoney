@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SmartMoney - Solusi Keuangan Cerdas</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <a href="index.html" class="logo">Smart<span>Money</span></a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Buka Menu">☰</button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><button id="themeToggle" class="btn-theme">🌙 Dark Mode</button></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <span class="badge">Proyek Cloud Computing • XII RPL</span>
+      <h1>Kelola Keuangan Lebih Pintar & Terencana</h1>
+      <p>SmartMoney hadir untuk membantumu memantau anggaran, merencanakan masa depan, dan mengelola literasi keuangan pribadi dengan mudah.</p>
+      <div class="hero-buttons">
+        <a href="#kalkulator" class="btn-primary">Coba Kalkulator</a>
+        <a href="about.html" class="btn-secondary">Tentang Kami</a>
+      </div>
+    </section>
+
+    <!-- Fitur Interaktif DOM: Kalkulator Mini Tabungan -->
+    <section id="kalkulator" class="card calculator-box">
+      <h2>🧮 Simulasi Target Tabungan Cepat</h2>
+      <p>Hitung estimasi waktu menabung untuk mencapai barang impianmu.</p>
+      <div class="form-group">
+        <label for="targetNominal">Target Dana (Rp):</label>
+        <input type="number" id="targetNominal" placeholder="Contoh: 5000000">
+      </div>
+      <div class="form-group">
+        <label for="tabunganBulanan">Tabungan per Bulan (Rp):</label>
+        <input type="number" id="tabunganBulanan" placeholder="Contoh: 500000">
+      </div>
+      <button id="hitungBtn" class="btn-primary full-width">Hitung Estimasi</button>
+      <div id="hasilSimulasi" class="saved-message" style="display: none; margin-top: 1rem;"></div>
+    </section>
+
+    <section class="projects" style="margin-top: 2.5rem;">
+      <h2>Fitur Unggulan SmartMoney</h2>
+      <div class="card-grid">
+        <div class="card">
+          <h3>📊 Catat Anggaran</h3>
+          <p>Pantau pemasukan dan pengeluaran harian langsung dari perangkatmu tanpa risiko data hilang berkat penyimpanan lokal.</p>
+        </div>
+        <div class="card">
+          <h3>💡 Tips Finansial</h3>
+          <p>Dapatkan panduan praktis menghemat uang jajan dan investasi pemula untuk pelajar SMK.</p>
+        </div>
+        <div class="card">
+          <h3>☁️ Cloud Deployment</h3>
+          <p>Website ini di-hosting secara online agar dapat diakses kapan saja melalui internet menggunakan Vercel atau GitHub Pages[cite: 1, 2, 3].</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 SmartMoney Team - Kelas XII RPL. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
